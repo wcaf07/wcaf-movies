@@ -1,0 +1,421 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		52967D4B20EF21BD00736800 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52967D4A20EF21BD00736800 /* AppDelegate.swift */; };
+		52967D4D20EF21BD00736800 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52967D4C20EF21BD00736800 /* ViewController.swift */; };
+		52967D5020EF21BD00736800 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52967D4E20EF21BD00736800 /* Main.storyboard */; };
+		52967D5220EF21BD00736800 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52967D5120EF21BD00736800 /* Assets.xcassets */; };
+		52967D5520EF21BD00736800 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52967D5320EF21BD00736800 /* LaunchScreen.storyboard */; };
+		52967D6020EF21BD00736800 /* wcafMoviesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52967D5F20EF21BD00736800 /* wcafMoviesTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		52967D5C20EF21BD00736800 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52967D3F20EF21BD00736800 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 52967D4620EF21BD00736800;
+			remoteInfo = wcafMovies;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		52967D4720EF21BD00736800 /* wcafMovies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wcafMovies.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		52967D4A20EF21BD00736800 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		52967D4C20EF21BD00736800 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		52967D4F20EF21BD00736800 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		52967D5120EF21BD00736800 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		52967D5420EF21BD00736800 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		52967D5620EF21BD00736800 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52967D5B20EF21BD00736800 /* wcafMoviesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = wcafMoviesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		52967D5F20EF21BD00736800 /* wcafMoviesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wcafMoviesTests.swift; sourceTree = "<group>"; };
+		52967D6120EF21BD00736800 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		52967D4420EF21BD00736800 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52967D5820EF21BD00736800 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		52967D3E20EF21BC00736800 = {
+			isa = PBXGroup;
+			children = (
+				52967D4920EF21BD00736800 /* wcafMovies */,
+				52967D5E20EF21BD00736800 /* wcafMoviesTests */,
+				52967D4820EF21BD00736800 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		52967D4820EF21BD00736800 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				52967D4720EF21BD00736800 /* wcafMovies.app */,
+				52967D5B20EF21BD00736800 /* wcafMoviesTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		52967D4920EF21BD00736800 /* wcafMovies */ = {
+			isa = PBXGroup;
+			children = (
+				52967D4A20EF21BD00736800 /* AppDelegate.swift */,
+				52967D4C20EF21BD00736800 /* ViewController.swift */,
+				52967D4E20EF21BD00736800 /* Main.storyboard */,
+				52967D5120EF21BD00736800 /* Assets.xcassets */,
+				52967D5320EF21BD00736800 /* LaunchScreen.storyboard */,
+				52967D5620EF21BD00736800 /* Info.plist */,
+			);
+			path = wcafMovies;
+			sourceTree = "<group>";
+		};
+		52967D5E20EF21BD00736800 /* wcafMoviesTests */ = {
+			isa = PBXGroup;
+			children = (
+				52967D5F20EF21BD00736800 /* wcafMoviesTests.swift */,
+				52967D6120EF21BD00736800 /* Info.plist */,
+			);
+			path = wcafMoviesTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		52967D4620EF21BD00736800 /* wcafMovies */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52967D6420EF21BD00736800 /* Build configuration list for PBXNativeTarget "wcafMovies" */;
+			buildPhases = (
+				52967D4320EF21BD00736800 /* Sources */,
+				52967D4420EF21BD00736800 /* Frameworks */,
+				52967D4520EF21BD00736800 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = wcafMovies;
+			productName = wcafMovies;
+			productReference = 52967D4720EF21BD00736800 /* wcafMovies.app */;
+			productType = "com.apple.product-type.application";
+		};
+		52967D5A20EF21BD00736800 /* wcafMoviesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52967D6720EF21BD00736800 /* Build configuration list for PBXNativeTarget "wcafMoviesTests" */;
+			buildPhases = (
+				52967D5720EF21BD00736800 /* Sources */,
+				52967D5820EF21BD00736800 /* Frameworks */,
+				52967D5920EF21BD00736800 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				52967D5D20EF21BD00736800 /* PBXTargetDependency */,
+			);
+			name = wcafMoviesTests;
+			productName = wcafMoviesTests;
+			productReference = 52967D5B20EF21BD00736800 /* wcafMoviesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		52967D3F20EF21BD00736800 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Wanderley Filho";
+				TargetAttributes = {
+					52967D4620EF21BD00736800 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					52967D5A20EF21BD00736800 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 52967D4620EF21BD00736800;
+					};
+				};
+			};
+			buildConfigurationList = 52967D4220EF21BD00736800 /* Build configuration list for PBXProject "wcafMovies" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 52967D3E20EF21BC00736800;
+			productRefGroup = 52967D4820EF21BD00736800 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				52967D4620EF21BD00736800 /* wcafMovies */,
+				52967D5A20EF21BD00736800 /* wcafMoviesTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		52967D4520EF21BD00736800 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52967D5520EF21BD00736800 /* LaunchScreen.storyboard in Resources */,
+				52967D5220EF21BD00736800 /* Assets.xcassets in Resources */,
+				52967D5020EF21BD00736800 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52967D5920EF21BD00736800 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		52967D4320EF21BD00736800 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52967D4D20EF21BD00736800 /* ViewController.swift in Sources */,
+				52967D4B20EF21BD00736800 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52967D5720EF21BD00736800 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52967D6020EF21BD00736800 /* wcafMoviesTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		52967D5D20EF21BD00736800 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 52967D4620EF21BD00736800 /* wcafMovies */;
+			targetProxy = 52967D5C20EF21BD00736800 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		52967D4E20EF21BD00736800 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				52967D4F20EF21BD00736800 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		52967D5320EF21BD00736800 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				52967D5420EF21BD00736800 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		52967D6220EF21BD00736800 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		52967D6320EF21BD00736800 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		52967D6520EF21BD00736800 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = wcafMovies/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.br.wcafMovies;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		52967D6620EF21BD00736800 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = wcafMovies/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.br.wcafMovies;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		52967D6820EF21BD00736800 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = wcafMoviesTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.br.wcafMoviesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/wcafMovies.app/wcafMovies";
+			};
+			name = Debug;
+		};
+		52967D6920EF21BD00736800 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = wcafMoviesTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.br.wcafMoviesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/wcafMovies.app/wcafMovies";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		52967D4220EF21BD00736800 /* Build configuration list for PBXProject "wcafMovies" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52967D6220EF21BD00736800 /* Debug */,
+				52967D6320EF21BD00736800 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		52967D6420EF21BD00736800 /* Build configuration list for PBXNativeTarget "wcafMovies" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52967D6520EF21BD00736800 /* Debug */,
+				52967D6620EF21BD00736800 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		52967D6720EF21BD00736800 /* Build configuration list for PBXNativeTarget "wcafMoviesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52967D6820EF21BD00736800 /* Debug */,
+				52967D6920EF21BD00736800 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 52967D3F20EF21BD00736800 /* Project object */;
+}
