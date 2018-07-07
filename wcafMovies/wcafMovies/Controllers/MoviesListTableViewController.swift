@@ -10,23 +10,14 @@ import UIKit
 
 class MoviesListTableViewController: UITableViewController {
     
+    var page: Int = 1
     var movies:[Movie] = []
+    let services = TheMovieDBServices()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let services = TheMovieDBServices()
-        
-        services.loadUpcomingMovies(page: 1) { movies in
-            self.movies = movies!
-            self.tableView.reloadData()
-            
-            services.loadImagesIntoMovies(movies: self.movies) { movies in
-                print("output from movies download \(movies)")
-                self.movies = movies
-                self.tableView.reloadData()
-            }
-        }
+        self.loadMovies()
         
     }
 
@@ -52,12 +43,41 @@ class MoviesListTableViewController: UITableViewController {
 
         cell.movieLabel.text = self.movies[indexPath.row].name
         cell.genreLabel.text = "Genre will be loaded"
-        cell.releaseDate.text = self.movies[indexPath.row].releaseDate
+        cell.releaseDate.text = "Release date: \(self.movies[indexPath.row].releaseDate)"
         cell.movieImage.image = self.movies[indexPath.row].image
         
         return cell
     }
-
+    
+    override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        if indexPath.row == (self.movies.count-1) {
+            self.page += 1
+            print("loading one more page \(self.page)")
+            loadMovies()
+        }
+    }
+    
+    func loadMovies() {
+        self.services.loadUpcomingMovies(page: self.page) { movies in
+            self.services.loadImagesIntoMovies(movies: movies!) { movies in
+                self.movies.append(contentsOf: movies)
+                self.tableView.reloadData()
+            }
+        }
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "movieDetails" {
+            let detailsViewController = segue.destination as? DetailsViewController
+            if let details = detailsViewController {
+                details.movie = self.movies[(self.tableView.indexPathForSelectedRow?.row)!]
+            }
+        }
+    }
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {

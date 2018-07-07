@@ -18,6 +18,16 @@ struct Movie {
     var genre:[Int]
     var overview:String
     var image:UIImage
+    
+    init() {
+        self.name=""
+        self.id = 0
+        self.posterPath = ""
+        self.releaseDate = ""
+        self.genre = []
+        self.overview = ""
+        self.image = UIImage()
+    }
 }
 
 extension Movie {

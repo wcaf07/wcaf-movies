@@ -18,6 +18,7 @@
 		A7C4D0A3690D8EC848F89093 /* Pods_wcafMovies.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2447639CA5CC8DB4D8745A50 /* Pods_wcafMovies.framework */; };
 		BEE584B820F0F1890041E6D9 /* TheMovieDBServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE584B720F0F1890041E6D9 /* TheMovieDBServices.swift */; };
 		BEE584BA20F1292C0041E6D9 /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE584B920F1292C0041E6D9 /* MovieTableViewCell.swift */; };
+		BEE584BC20F152BD0041E6D9 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE584BB20F152BD0041E6D9 /* DetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		B12A01E5A6B8760FB4A73289 /* Pods_wcafMoviesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_wcafMoviesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEE584B720F0F1890041E6D9 /* TheMovieDBServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TheMovieDBServices.swift; path = Services/TheMovieDBServices.swift; sourceTree = "<group>"; };
 		BEE584B920F1292C0041E6D9 /* MovieTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MovieTableViewCell.swift; path = Views/MovieTableViewCell.swift; sourceTree = "<group>"; };
+		BEE584BB20F152BD0041E6D9 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DetailsViewController.swift; path = Controllers/DetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +131,7 @@
 		52967D6A20EF2AEB00736800 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				BEE584BB20F152BD0041E6D9 /* DetailsViewController.swift */,
 				52967D6E20EF2BEF00736800 /* MoviesListTableViewController.swift */,
 			);
 			name = Controllers;
@@ -337,6 +340,7 @@
 				52967D7120EF2C9B00736800 /* Movie.swift in Sources */,
 				BEE584B820F0F1890041E6D9 /* TheMovieDBServices.swift in Sources */,
 				52967D4B20EF21BD00736800 /* AppDelegate.swift in Sources */,
+				BEE584BC20F152BD0041E6D9 /* DetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
