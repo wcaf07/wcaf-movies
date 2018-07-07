@@ -9,20 +9,25 @@
 import UIKit
 
 class MoviesListTableViewController: UITableViewController {
-
+    
+    var movies:[Movie] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         let services = TheMovieDBServices()
         
         services.loadUpcomingMovies(page: 1) { movies in
-            print("Movies loaded async: \(movies)")
+            self.movies = movies!
+            self.tableView.reloadData()
+            
+            services.loadImagesIntoMovies(movies: self.movies) { movies in
+                print("output from movies download \(movies)")
+                self.movies = movies
+                self.tableView.reloadData()
+            }
         }
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -34,23 +39,24 @@ class MoviesListTableViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return self.movies.count
     }
 
-    /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "movieOverview", for: indexPath) as! MovieTableViewCell
 
-        // Configure the cell...
-
+        cell.movieLabel.text = self.movies[indexPath.row].name
+        cell.genreLabel.text = "Genre will be loaded"
+        cell.releaseDate.text = self.movies[indexPath.row].releaseDate
+        cell.movieImage.image = self.movies[indexPath.row].image
+        
         return cell
     }
-    */
 
     /*
     // Override to support conditional editing of the table view.
