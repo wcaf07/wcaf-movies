@@ -7,32 +7,34 @@
 //
 
 import UIKit
-import Foundation
+import Alamofire
 
 class MoviesListTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let postData = NSData(data: "{}".data(using: String.Encoding.utf8)!)
+        var movies:[Movie] = []
         
-        var request = NSMutableURLRequest(url: NSURL(string: "https://api.themoviedb.org/3/movie/upcoming?api_key=1f54bd990f1cdfb230adb312546d765d&language=en-US&page=1")! as URL,
-                                          cachePolicy: .useProtocolCachePolicy,
-                                          timeoutInterval: 10.0)
-        request.httpMethod = "GET"
-        request.httpBody = postData as Data
-        
-        let session = URLSession.shared
-        let dataTask = session.dataTask(with: request as URLRequest, completionHandler: { (data, response, error) -> Void in
-            if (error != nil) {
-                print(error ?? "Error on request")
-            } else {
-                let httpResponse = response as? HTTPURLResponse
-                print(httpResponse ?? "REsposne")
+        Alamofire.request("https://api.themoviedb.org/3/movie/upcoming?api_key=1f54bd990f1cdfb230adb312546d765d&language=en-US&page=1").responseJSON { response in
+            
+            if let json = response.result.value as? [String: Any]{
+                if let results = json["results"] {
+                    if let arrayMovies = results as? [Any] {
+                        for object in arrayMovies {
+                            if let mov = Movie(json: object as! [String : Any]) {
+                                movies.append(mov)
+                            }
+                        }
+                        print("array of objects: \(movies)")
+                    }
+                }
             }
-        })
-        
-        dataTask.resume()
+            
+//            if let data = response.data, let utf8Text = String(data: data, encoding: .utf8) {
+//                print("Data: \(utf8Text)") // original server data as UTF8 string
+//            }
+        }
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
