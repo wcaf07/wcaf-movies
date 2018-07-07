@@ -1,0 +1,6 @@
+framework module Pods_wcafMovies {
+  umbrella header "Pods-wcafMovies-umbrella.h"
+
+  export *
+  module * { export * }
+}
