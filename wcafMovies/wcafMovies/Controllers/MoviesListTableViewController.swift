@@ -7,35 +7,17 @@
 //
 
 import UIKit
-import Alamofire
 
 class MoviesListTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        var movies:[Movie] = []
+        let services = TheMovieDBServices()
         
-        Alamofire.request("https://api.themoviedb.org/3/movie/upcoming?api_key=1f54bd990f1cdfb230adb312546d765d&language=en-US&page=1").responseJSON { response in
-            
-            if let json = response.result.value as? [String: Any]{
-                if let results = json["results"] {
-                    if let arrayMovies = results as? [Any] {
-                        for object in arrayMovies {
-                            if let mov = Movie(json: object as! [String : Any]) {
-                                movies.append(mov)
-                            }
-                        }
-                        print("array of objects: \(movies)")
-                    }
-                }
-            }
-            
-//            if let data = response.data, let utf8Text = String(data: data, encoding: .utf8) {
-//                print("Data: \(utf8Text)") // original server data as UTF8 string
-//            }
+        services.loadUpcomingMovies(page: 1) { movies in
+            print("Movies loaded async: \(movies)")
         }
-
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 

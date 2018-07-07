@@ -16,6 +16,7 @@
 		52967D7120EF2C9B00736800 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52967D7020EF2C9B00736800 /* Movie.swift */; };
 		97DF30CC403780AED49B68AF /* Pods_wcafMoviesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B12A01E5A6B8760FB4A73289 /* Pods_wcafMoviesTests.framework */; };
 		A7C4D0A3690D8EC848F89093 /* Pods_wcafMovies.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2447639CA5CC8DB4D8745A50 /* Pods_wcafMovies.framework */; };
+		BEE584B820F0F1890041E6D9 /* TheMovieDBServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE584B720F0F1890041E6D9 /* TheMovieDBServices.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		9C1A61D6140E38C44A6AA34E /* Pods-wcafMoviesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wcafMoviesTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-wcafMoviesTests/Pods-wcafMoviesTests.release.xcconfig"; sourceTree = "<group>"; };
 		A6022A6472A4D3646BF8A2A8 /* Pods-wcafMoviesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wcafMoviesTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-wcafMoviesTests/Pods-wcafMoviesTests.debug.xcconfig"; sourceTree = "<group>"; };
 		B12A01E5A6B8760FB4A73289 /* Pods_wcafMoviesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_wcafMoviesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEE584B720F0F1890041E6D9 /* TheMovieDBServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TheMovieDBServices.swift; path = Services/TheMovieDBServices.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +150,7 @@
 		52967D6D20EF2B2B00736800 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				BEE584B720F0F1890041E6D9 /* TheMovieDBServices.swift */,
 			);
 			name = Services;
 			sourceTree = "<group>";
@@ -328,6 +331,7 @@
 			files = (
 				52967D6F20EF2BEF00736800 /* MoviesListTableViewController.swift in Sources */,
 				52967D7120EF2C9B00736800 /* Movie.swift in Sources */,
+				BEE584B820F0F1890041E6D9 /* TheMovieDBServices.swift in Sources */,
 				52967D4B20EF21BD00736800 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
