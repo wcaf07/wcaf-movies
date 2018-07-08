@@ -42,7 +42,7 @@ class MoviesListTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "movieOverview", for: indexPath) as! MovieTableViewCell
 
         cell.movieLabel.text = self.movies[indexPath.row].name
-        cell.genreLabel.text = "Genre will be loaded"
+        cell.genreLabel.text = self.movies[indexPath.row].genreNames.joined(separator: ",")
         cell.releaseDate.text = "Release date: \(self.movies[indexPath.row].releaseDate)"
         cell.movieImage.image = self.movies[indexPath.row].image
         

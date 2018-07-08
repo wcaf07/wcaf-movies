@@ -15,7 +15,8 @@ struct Movie {
     var posterPath:String
     var id:Int
     var releaseDate:String
-    var genre:[Int]
+    var genreIds:[Int]
+    var genreNames:[String]
     var overview:String
     var image:UIImage
     
@@ -24,7 +25,8 @@ struct Movie {
         self.id = 0
         self.posterPath = ""
         self.releaseDate = ""
-        self.genre = []
+        self.genreIds = []
+        self.genreNames = []
         self.overview = ""
         self.image = UIImage()
     }
@@ -36,7 +38,7 @@ extension Movie {
             let id = json["id"] as? Int,
             let posterPath = json["poster_path"] as? String,
             let releaseDate = json["release_date"] as? String,
-            let genre = json["genre_ids"] as? [Int],
+            let genreIds = json["genre_ids"] as? [Int],
             let overview = json["overview"] as? String
             else {
                 return nil
@@ -46,7 +48,8 @@ extension Movie {
         self.id = id
         self.posterPath = posterPath
         self.releaseDate = releaseDate
-        self.genre = genre
+        self.genreIds = genreIds
+        self.genreNames = []
         self.overview = overview
         self.image = UIImage()
     }

@@ -19,6 +19,7 @@
 		BEE584B820F0F1890041E6D9 /* TheMovieDBServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE584B720F0F1890041E6D9 /* TheMovieDBServices.swift */; };
 		BEE584BA20F1292C0041E6D9 /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE584B920F1292C0041E6D9 /* MovieTableViewCell.swift */; };
 		BEE584BC20F152BD0041E6D9 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE584BB20F152BD0041E6D9 /* DetailsViewController.swift */; };
+		BEE584BE20F1B5230041E6D9 /* Genre.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE584BD20F1B5230041E6D9 /* Genre.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		BEE584B720F0F1890041E6D9 /* TheMovieDBServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TheMovieDBServices.swift; path = Services/TheMovieDBServices.swift; sourceTree = "<group>"; };
 		BEE584B920F1292C0041E6D9 /* MovieTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MovieTableViewCell.swift; path = Views/MovieTableViewCell.swift; sourceTree = "<group>"; };
 		BEE584BB20F152BD0041E6D9 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DetailsViewController.swift; path = Controllers/DetailsViewController.swift; sourceTree = "<group>"; };
+		BEE584BD20F1B5230041E6D9 /* Genre.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Genre.swift; path = Models/Genre.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +151,7 @@
 			isa = PBXGroup;
 			children = (
 				52967D7020EF2C9B00736800 /* Movie.swift */,
+				BEE584BD20F1B5230041E6D9 /* Genre.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -341,6 +344,7 @@
 				BEE584B820F0F1890041E6D9 /* TheMovieDBServices.swift in Sources */,
 				52967D4B20EF21BD00736800 /* AppDelegate.swift in Sources */,
 				BEE584BC20F152BD0041E6D9 /* DetailsViewController.swift in Sources */,
+				BEE584BE20F1B5230041E6D9 /* Genre.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

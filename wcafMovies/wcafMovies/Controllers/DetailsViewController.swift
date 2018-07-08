@@ -14,6 +14,7 @@ class DetailsViewController: UIViewController {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var releaseLabel: UILabel!
     @IBOutlet weak var overviewLabel: UILabel!
+    @IBOutlet weak var genreLabel: UILabel!
     
     var movie:Movie = Movie()
     
@@ -22,6 +23,7 @@ class DetailsViewController: UIViewController {
         
         self.movieImage.image = self.movie.image
         self.titleLabel.text = self.movie.name
+        self.genreLabel.text = self.movie.genreNames.joined(separator: ",")
         self.releaseLabel.text = "Release date: \(self.movie.releaseDate)"
         self.overviewLabel.text = self.movie.overview
         
