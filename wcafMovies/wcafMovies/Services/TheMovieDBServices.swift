@@ -136,4 +136,33 @@ class TheMovieDBServices {
         }
         return moviesReturn
     }
+    
+    func searchMovies(searchQuery:String, page:Int, completion: @escaping ([Movie]?) -> Void) {
+        var movies:[Movie] = []
+        var genres:[Genre] = []
+        let group = DispatchGroup()
+        
+        group.enter()
+        self.loadAllGenres() { gres in
+            genres = gres
+            group.leave()
+        }
+        group.notify(queue: .main) {
+            Alamofire.request("https://api.themoviedb.org/3/search/movie?api_key=1f54bd990f1cdfb230adb312546d765d&page=\(page)&query=\(searchQuery)").responseJSON { response in
+                if let json = response.result.value as? [String: Any]{
+                    if let results = json["results"] {
+                        if let arrayMovies = results as? [Any] {
+                            for object in arrayMovies {
+                                if let mov = Movie(json: object as! [String : Any]) {
+                                    movies.append(mov)
+                                }
+                            }
+                            movies = self.loadGenreNames(genres: genres, movies: movies)
+                            completion(movies)
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
